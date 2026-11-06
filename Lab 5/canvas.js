@@ -101,3 +101,170 @@ ctx.closePath();
 
 let canva2 = document.getElementById("canva2");
 let ctx2 = canva2.getContext("2d");
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'blue';
+ctx2.fillRect(0,0,45,45);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'red';
+ctx2.fillRect(255,0,45,45);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'red';
+ctx2.fillRect(110,150,40,40);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'aquamarine';
+ctx2.fillRect(0,150,30,30);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'aquamarine';
+ctx2.fillRect(0,120,30,30);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'aquamarine';
+ctx2.fillRect(270,135,30,30);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'yellow';
+ctx2.fillRect(0,270,60,30);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'yellow';
+ctx2.fillRect(0,240,30,30);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'black';
+ctx2.fillRect(240,270,60,30);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 5;
+ctx2.fillStyle = 'black';
+ctx2.fillRect(270,240,30,30);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 2;
+ctx2.strokeStyle = 'green';
+ctx2.strokeRect(150,150,150,150);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 2;
+ctx2.strokeStyle = 'green';
+ctx2.strokeRect(0,150,150,150);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 3;
+ctx2.strokeStyle = 'black';
+ctx2.strokeRect(0,0,300,300);
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 1;
+ctx2.fillStyle = 'yellow';
+ctx2.strokeStyle = 'green';
+ctx2.arc(210,230,15,Math.PI,4*Math.PI);
+ctx2.fill();
+ctx2.stroke()
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 1;
+ctx2.fillStyle = 'yellow';
+ctx2.strokeStyle = 'green';
+ctx2.arc(70,230,15,Math.PI,4*Math.PI);
+ctx2.fill();
+ctx2.stroke()
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 1;
+ctx2.fillStyle = 'aquamarine';
+ctx2.strokeStyle = 'blue';
+ctx2.arc(150,115,15,Math.PI,4*Math.PI);
+ctx2.fill();
+ctx2.stroke()
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 1;
+ctx2.strokeStyle = 'green';
+ctx2.arc(150,150,60,Math.PI,2*Math.PI);
+ctx2.stroke()
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 3;
+ctx2.fillStyle = 'blue';
+ctx2.moveTo(45,45)
+ctx2.lineTo(150, 150);
+ctx2.lineTo(149, 150);
+ctx2.fill();
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 3;
+ctx2.fillStyle = 'red';
+ctx2.moveTo(255,45)
+ctx2.lineTo(150, 150);
+ctx2.lineTo(149, 150);
+ctx2.fill();
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 1;
+ctx2.strokeStyle = 'green';
+ctx2.arc(150,150,80,Math.PI,1.25*Math.PI);
+ctx2.stroke()
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 1;
+ctx2.strokeStyle = 'green';
+ctx2.arc(150,150,80,1.75*Math.PI,0.010*Math.PI);
+ctx2.stroke()
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 1;
+ctx2.strokeStyle = 'green';
+ctx2.arc(150,300,80,Math.PI,1.5*Math.PI);
+ctx2.stroke()
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 1;
+ctx2.strokeStyle = 'green';
+ctx2.arc(150,300,60,1.5*Math.PI,Math.PI);
+ctx2.stroke()
+ctx2.closePath();
+
+ctx2.beginPath();
+ctx2.lineWidth = 1;
+ctx2.fillStyle = 'aquamarine';
+ctx2.strokeStyle = 'green';
+ctx2.arc(150,298,40,Math.PI,2*Math.PI);
+ctx2.fill();
+ctx2.stroke()
+ctx2.closePath();
