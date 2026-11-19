@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro no MongoDB</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Cadastrar Aluno</h1>
+    <form action="/cadastrar" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="ra">RA:</label>
+      <input type="text" id="ra" name="ra" required>
+
+      <label for="curso">Curso:</label>
+      <input type="text" id="curso" name="curso" required>
+
+      <button type="submit">Salvar no Banco</button>
+    </form>
+
+    <hr>
+
+    <h2>Consultar Banco</h2>
+    <form action="/alunos" method="GET">
+      <input type="text" name="busca" placeholder="Digite um nome ou RA...">
+      <button type="submit">Procurar Usuário</button>
+    </form>
+
+    <div class="links">
+      <a href="/alunos">Ver todos os cadastrados</a>
+    </div>
+  </main>
+</body>
+</html>

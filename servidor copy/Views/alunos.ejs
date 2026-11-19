@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Alunos Cadastrados</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container container-largo">
+    <h1>Alunos no Banco de Dados</h1>
+
+    <form action="/alunos" method="GET" class="form-busca">
+      <input
+        type="text"
+        name="busca"
+        placeholder="Buscar por nome ou RA..."
+        value="<%= busca %>"
+      >
+      <button type="submit">Procurar</button>
+      <% if (busca) { %>
+        <a href="/alunos" class="btn-secundario">Limpar</a>
+      <% } %>
+    </form>
+
+    <% if (alunos.length === 0) { %>
+      <p class="aviso">Nenhum aluno encontrado no banco de dados.</p>
+    <% } else { %>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>RA</th>
+            <th>Curso</th>
+            <th>Data de Cadastro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% alunos.forEach((aluno) => { %>
+            <tr>
+              <td><%= aluno.nome %></td>
+              <td><%= aluno.ra %></td>
+              <td><%= aluno.curso %></td>
+              <td><%= aluno.criadoEm.toLocaleDateString("pt-BR") %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } %>
+
+    <div class="links">
+      <a href="/">Voltar ao cadastro</a>
+    </div>
+  </main>
+</body>
+</html>

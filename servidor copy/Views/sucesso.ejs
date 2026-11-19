@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro Realizado</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Dados Salvos com Sucesso!</h1>
+    <p><strong>ID gerado pelo MongoDB:</strong> <%= aluno._id %></p>
+    <p><strong>Nome:</strong> <%= aluno.nome %></p>
+    <p><strong>RA:</strong> <%= aluno.ra %></p>
+    <p><strong>Curso:</strong> <%= aluno.curso %></p>
+
+    <div class="links">
+      <a href="/">Voltar ao formulário</a> |
+      <a href="/alunos">Ver todos os cadastrados</a>
+    </div>
+  </main>
+</body>
+</html>
