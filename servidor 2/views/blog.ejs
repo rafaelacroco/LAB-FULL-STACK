@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Respostas blog</title>
+</head>
+<body>
+
+  <h1>Resultado:</h1>
+  <p><%= resposta %></p>
+  <% if (listaposts && listaposts.length > 0) { %>
+    <table>
+      <tr>
+        <th>Título</th>
+        <th>Resumo</th>
+        <th>Conteúdo</th>
+      </tr>
+      <% listaposts.forEach(function(post) { %>
+        <tr>
+          <td><%= post.db_titulo %></td>
+          <td><%= post.db_resumo %></td>
+          <td><%= post.db_conteudo %></td>
+        </tr>
+      <% }); %>
+    </table>
+  <% } %>
+  <a href="/index.html">Voltar aba principal</a>
+
+</body>
+</html>
